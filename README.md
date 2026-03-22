@@ -1,26 +1,29 @@
 # GitHub Repository Explorer
 
-A clean and responsive web application built with React and TypeScript to search and explore GitHub repositories using the GitHub Search API.
+A responsive web application built with React and TypeScript to search and explore GitHub repositories using the GitHub Search API.
 
 ---
 
 ## Features
 
 - Search GitHub repositories by keyword
-- Pagination with dynamic page numbers
-- Fast and responsive UI
-- Clear search input instantly
-- Loading skeleton UI
-- Error handling
-- Fully responsive (mobile + desktop)
+- Server-side pagination with dynamic page navigation
+- Loading states for better user experience
+- Error handling for API failures and invalid inputs
+- Clear search input functionality
+- Responsive design for mobile and desktop
+
+---
 
 ## Tech Stack
 
 - React (Vite)
 - TypeScript
 - Axios
-- CSS (Custom Styling)
+- CSS
 - React Icons
+
+---
 
 ## Setup Instructions
 
@@ -31,42 +34,48 @@ npm install
 npm run dev
 ```
 
-## API Used
+---
+
+## API
 
 GitHub Search API:
 
 https://api.github.com/search/repositories
 
-Example:
+---
 
-https://api.github.com/search/repositories?q=react&page=1&per_page=10
+## Implementation Details
 
-## Key Implementation Details
+- Used GitHub Search API with pagination support
+- Implemented input validation (minimum 3 characters)
+- Built dynamic pagination (e.g., 1 ... 5 6 7 ... 100)
+- Structured code with separation of concerns (services, types, UI)
+- Focused on clean and intuitive user interface
 
-- Used server-side pagination via GitHub API
-- Added input validation (minimum 3 characters)
-- Implemented dynamic pagination (1 ... 5 6 7 ... 100)
-- Designed UI with focus on real-world UX
-- Clean separation of services, types, and UI
+---
 
 ## Screenshots
 
 ### Search Results
 
-[Search Results](./assets/Screenshot%201.png)
+![Search Results](./assets/Screenshot%201.png)
 
 ### Pagination
 
-[Pagination](./assets/Screenshot%202.png)
+![Pagination](./assets/Screenshot%202.png)
 
 ### No Results State
 
-[No Results](./assets/Screenshot%203.png)
+![No Results](./assets/Screenshot%203.png)
 
-## GitHub Repository
+---
+
+## Repository
 
 https://github.com/shalinibvp1996-ops/github-repo-search
 
+---
+
 ## Author
 
-Shalini Raj
+Shalini
