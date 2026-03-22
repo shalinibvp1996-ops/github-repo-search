@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# GitHub Repository Explorer 🔍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and responsive web application built with React and TypeScript to search and explore GitHub repositories using the GitHub Search API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🔎 Search GitHub repositories by keyword
+- 📄 Pagination with dynamic page numbers
+- ⚡ Fast and responsive UI
+- ❌ Clear search input instantly
+- ⏳ Loading skeleton UI
+- 🚫 Error handling
+- 📱 Fully responsive (mobile + desktop)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React (Vite)
+- TypeScript
+- Axios
+- CSS (Custom Styling)
+- React Icons
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Setup Instructions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/shalinibvp1996-ops/github-repo-search.git
+cd github-repo-search
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 API Used
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+GitHub Search API:
+
+https://api.github.com/search/repositories
+
+Example:
+
+https://api.github.com/search/repositories?q=react&page=1&per_page=10
+
+---
+
+## 🧠 Key Implementation Details
+
+- Used server-side pagination via GitHub API
+- Added input validation (minimum 3 characters)
+- Implemented dynamic pagination (1 ... 5 6 7 ... 100)
+- Designed UI with focus on real-world UX
+- Clean separation of services, types, and UI
+
+---
+
+## 🔗 GitHub Repository
+
+https://github.com/shalinibvp1996-ops/github-repo-search
+
+---
+
+## 👩‍💻 Author
+
+Shalini Raj
+
+---
+
+## 📌 Notes
+
+This project was built as part of an assignment.
+Focus was on clean UI, proper API handling, and good user experience.
+
+---
