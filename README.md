@@ -49,19 +49,19 @@ https://api.github.com/search/repositories?q=react&page=1&per_page=10
 - Designed UI with focus on real-world UX
 - Clean separation of services, types, and UI
 
-## 📸 Screenshots
+## Screenshots
 
-### 🔍 Search Results
+### Search Results
 
-![Search Results](./assets/Screenshot%201.png)
+[Search Results](./assets/Screenshot%201.png)
 
-### 📄 Pagination
+### Pagination
 
-![Pagination](./assets/Screenshot%202.png)
+[Pagination](./assets/Screenshot%202.png)
 
-### ❌ No Results State
+### No Results State
 
-![No Results](./assets/Screenshot%203.png)
+[No Results](./assets/Screenshot%203.png)
 
 ## GitHub Repository
 
